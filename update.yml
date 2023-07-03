@@ -1,11 +1,10 @@
 - hosts: "all"
   become: yes
-  sudo: yes
-  #become_method: sudo
+  become_method: sudo
   #gather_facts: no
   tasks:
   - name: apt upgrade
-    #become: true
+
     apt:
       update_cache: yes
       upgrade: dist
