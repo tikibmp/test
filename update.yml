@@ -4,6 +4,7 @@
   #gather_facts: no
   tasks:
   - name: apt upgrade
+    become: yes
     apt:
       update_cache: yes
       upgrade: dist
