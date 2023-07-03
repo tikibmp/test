@@ -1,6 +1,7 @@
 - hosts: "update"
   become: yes
-  gather_facts: no
+  become_method: sudo
+  #gather_facts: no
   tasks:
   - name: apt upgrade
     apt:
