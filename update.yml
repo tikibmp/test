@@ -1,7 +1,6 @@
 - hosts: "all"
   become: yes
   gather_facts: no
-  accept_newhostkey: true
 
   tasks:
   - name: apt upgrade
